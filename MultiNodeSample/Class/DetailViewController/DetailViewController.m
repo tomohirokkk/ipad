@@ -39,6 +39,8 @@
 	}];
 }
 
+//ボタン操作
+
 - (IBAction)go:(id)sender {
     [[KNSCentralManager sharedInstance].activePeripherals enumerateObjectsUsingBlock:^(KNSPeripheral *p, BOOL *stop) {
         [p uartWrite:'g'];
